@@ -65,7 +65,11 @@ footer {
     padding: 1em;
     text-align: center;
     color: #e6457a;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
+
 
 .button {
     background-color: #e6457a;
