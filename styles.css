@@ -1,21 +1,24 @@
+/* Global Styles */
 body {
     font-family: Arial, Roboto, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #212121;
     color: #e5e5e5;
+    min-height: 100vh; /* Ensure the body takes up at least the full height of the viewport */
+    display: flex;
+    flex-direction: column; /* Make the body a flex container with column direction */
 }
 
+/* Header Styles */
 header {
     background-color: #333;
     padding: 1em;
-    margin-top: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-bottom: 0px;
+    margin-top: 0;
     text-align: center;
 }
 
+/* Navigation Styles */
 nav ul {
     list-style: none;
     margin: 0;
@@ -31,10 +34,12 @@ nav li {
     text-align: center;
 }
 
+/* Main Content Styles */
 main {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     padding: 50px;
+    flex: 1; /* Allow main to grow and fill the available space */
 }
 
 section {
@@ -43,34 +48,34 @@ section {
     margin-bottom: 30px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     grid-column: 1;
-    border-radius: 00px;
+    border-radius: 0px;
     font-size: 12pt;
 }
 
+/* Text and Links Styles */
 h1, h2, nav a {
     color: #e6457a;
     text-decoration: none;
 }
 
 h2:hover {
-    color:#ff69b4;
+    color: #ff69b4;
 }
 
 nav a:hover {
-    color:#ff69b4;
+    color: #ff69b4;
 }
 
+/* Footer Styles */
 footer {
     background-color: #333;
     padding: 1em;
     text-align: center;
     color: #e6457a;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    margin-top: auto; /* Push the footer to the bottom of the page content */
 }
 
-
+/* Button Styles */
 .button {
     background-color: #e6457a;
     border: none;
@@ -91,6 +96,7 @@ footer {
     background-color: #ff69b4;
 }
 
+/* Image Container Styles */
 .image-container {
     display: flex;
     flex-wrap: wrap;
@@ -98,6 +104,7 @@ footer {
     margin: 5px;
 }
 
+/* Text Styles */
 .text {
     line-height: 1.5;
     font-size: 14pt;
@@ -105,18 +112,13 @@ footer {
     margin-bottom: 40px;
 }
 
-/* POLAROID-ISH IMAGE LAYOUT */
-/* POLAROID-ISH IMAGE LAYOUT */
-/* POLAROID-ISH IMAGE LAYOUT */
-/* POLAROID-ISH IMAGE LAYOUT */
-/* POLAROID-ISH IMAGE LAYOUT */
-
+/* Polaroid-Style Image Layout */
 .image-container figure {
     margin: 5px;
     padding: 5px;
     background-color: #333;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    width: calc(50%-20px);
+    width: calc(50% - 20px);
 }
 
 .image-container figure img {
@@ -142,16 +144,11 @@ figcaption {
         justify-content: center;
     }
     .image-container figure {
-        width: calc(50% - 20px); /* adjust width for desktop */
+        width: calc(50% - 20px);
     }
 }
 
-/* IMAGE BESIDE TEXT */
-/* IMAGE BESIDE TEXT */
-/* IMAGE BESIDE TEXT */
-/* IMAGE BESIDE TEXT */
-/* IMAGE BESIDE TEXT */
-
+/* Image Beside Text Layout */
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -184,23 +181,25 @@ h2 {
     margin-top: 0;
 }
 
-@media only screen and (max-width:768px) {
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
     .container {
-        flex-direction:column;
+        flex-direction: column;
         margin-left: 0;
     }
     .responsive-image {
-        max-width:80%;
-        margin:0 auto;
+        max-width: 80%;
+        margin: 0 auto;
     }
     .text-container {
-        margin:20px;
+        margin: 20px;
     }
     .intro {
         padding-right: 20px;
     }
 }
 
+/* Welcome and Button Container Styles */
 .welcome {
     padding: 20px;
 }
