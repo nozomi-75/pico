@@ -39,8 +39,8 @@ main {
 
 section {
     background-color: #444;
-    padding: 1em;
-    margin-bottom: 30px;
+    padding: 2em;
+    margin-bottom: 40px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     grid-column: 1;
     border-radius: 00px;
